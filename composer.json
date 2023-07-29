@@ -1,0 +1,10 @@
+{
+    "name": "hondn/websites",
+    "description": "MVC Base for website",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "require": {}
+}

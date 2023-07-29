@@ -1,0 +1,15 @@
+app:
+    controllers: Cada ação do usuário chama uma função do controller para executar. O controller chama o model para a ação e passa as informações necessárias para ele, como os dados do POST, por exemplo.
+
+    core: Aqui está a configuração de rota. Uma classe armazena as rotas e faz as chamadas dos métodos do controller requisitado, entre outras funcionalidades.
+
+    models: Nesta pasta, ficam os modelos do projeto. Aqui se encontra a regra de negócio das entidades, telas e recursos do sistema. O model recebe a entidade do controller com as informações necessárias para executar determinada ação. Em seguida, cria-se a regra de negócio e chama o repository do model para realizar ações específicas no banco.
+        entities: Esta pasta contém as entidades do projeto, que representam as tabelas do banco de dados, incluindo seus campos, getters e setters.
+    
+    repositories: Cada model possui um repositório para realizar operações de banco de dados, como listar, cadastrar, editar, etc. O repositório recebe a entidade e executa apenas as ações relacionadas ao banco de dados.
+
+    views: Nesta pasta, são guardados pedaços do sistema, como includes, entre outros recursos relacionados à visualização.
+
+functions: Esta pasta guarda as funções que podem ser utilizadas em várias partes do sistema, como funções de depuração, cálculo de tamanho, e regras específicas de código.
+
+public: É a pasta pública do sistema, onde ficam os arquivos de estilo CSS, arquivos JavaScript e a página inicial do sistema.

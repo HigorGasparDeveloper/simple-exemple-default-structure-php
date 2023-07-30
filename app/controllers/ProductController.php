@@ -26,8 +26,8 @@
     }
 
     public function save() {
-      $product_name = $_POST['product_name'];
-      $product_price = $_POST['product_price'];
+      $product_name = $_POST['product_name'] ?? json_decode(file_get_contents('php://input'), true)['product_name'];
+      $product_price = $_POST['product_price'] ?? json_decode(file_get_contents('php://input'), true)['product_price'];
       $recorded_datetime = date('Y-m-d H:i:s');
 
       $this->product->product_name = $product_name;
